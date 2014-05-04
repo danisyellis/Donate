@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member_id: 1
+  item_name: MyString
+  description: MyText
+  status: MyText
+  date_donation_agreement: 2014-05-03
+  date_donate_by: 2014-05-03
+
+two:
+  member_id: 1
+  item_name: MyString
+  description: MyText
+  status: MyText
+  date_donation_agreement: 2014-05-03
+  date_donate_by: 2014-05-03

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @member.handup_id %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Member</th>
+      <th>Item name</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Date donation agreement</th>
+      <th>Date donate by</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @member.items.each do |item| %>
+      <tr>
+        <td><%= item.member_id %></td>
+        <td><%= item.item_name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.status %></td>
+        <td><%= item.date_donation_agreement %></td>
+        <td><%= item.date_donate_by %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
