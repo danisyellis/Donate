@@ -21,6 +21,10 @@ class MembersController < ApplicationController
   def edit
   end
 
+  def wishlist
+    @member = Member.find(params[:member_id])
+  end
+
   # POST /members
   # POST /members.json
   def create

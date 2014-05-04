@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
+  #before_filter :authenticate, :except => [:index, :show]
 
   # GET /items
   # GET /items.json
@@ -21,6 +22,9 @@ class ItemsController < ApplicationController
   def edit
   end
 
+  def confirmation
+  end
+  
   # POST /items
   # POST /items.json
   def create
@@ -66,6 +70,11 @@ class ItemsController < ApplicationController
     def set_item
       @item = Item.find(params[:id])
     end
+
+    #def authenticate
+      #authenticate_or_request_with_http_basic do |name, password|
+      #  name == "admin" && password == "password"
+   # end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params

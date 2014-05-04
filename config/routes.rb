@@ -1,7 +1,10 @@
 Donate::Application.routes.draw do
-  resources :members
-
-  resources :items
+  resources :members do
+    get 'wishlist'
+  end
+  resources :items do
+    get 'confirmation'
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

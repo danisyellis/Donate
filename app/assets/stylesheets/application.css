@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
  */
+h1
+{
+    color:blue;
+    text-align:left;
+    font-size:14pt;
+}
+ 
+table 
+{
+    width:75%;
+    border:1px solid green;
+}
+ 
+th
+{
+    height:40px;
+    border:1px solid green;
+    color:white;
+}
+ 
+td
+{
+    background-color: rgb(192,192,192);
+    foreground-color: rgb(0,0,0);
+    border:1px solid green;
+}

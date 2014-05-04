@@ -1,0 +1,29 @@
+<h1> Wish List</h1>
+
+<table class="items-table">
+
+  <thead>
+    <tr>
+      <td>Item Name</td>
+      <td>Description</td>
+      <td>Status</td>
+      <td></td>
+    </tr>
+  </thead>
+
+    <tbody>
+    <% @member.items.each do |item| %>
+     <td><%= item.item_name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.status %></td>
+        <td>
+          <form action="">
+            <input type="button" value="DONATE">
+          </form>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Item', new_item_path %>

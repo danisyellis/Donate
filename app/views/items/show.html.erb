@@ -20,15 +20,6 @@
   <%= @item.status %>
 </p>
 
-<p>
-  <strong>Date donation agreement:</strong>
-  <%= @item.date_donation_agreement %>
-</p>
-
-<p>
-  <strong>Date donate by:</strong>
-  <%= @item.date_donate_by %>
-</p>
-
+<%= link_to 'My Profile', member_path(@item.member_id) %>
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
