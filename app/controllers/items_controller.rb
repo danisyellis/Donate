@@ -1,11 +1,12 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-  #before_filter :authenticate, :except => [:index, :show]
+  #before_action :authenticate, except: [:index, :show]
 
   # GET /items
   # GET /items.json
   def index
     @items = Item.all
+
   end
 
   # GET /items/1
@@ -16,6 +17,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+
   end
 
   # GET /items/1/edit
@@ -23,6 +25,16 @@ class ItemsController < ApplicationController
   end
 
   def confirmation
+    @item = Item.find(params[:item_id])
+    @item.status = "In Process"
+    @item.save
+  end
+
+  def cannot
+    @item = Item.find(params[:item_id])
+    @item.status = "Needed"
+    @item.save
+    redirect_to member_wishlist_path(@item.member_id)
   end
   
   # POST /items
@@ -74,6 +86,7 @@ class ItemsController < ApplicationController
     #def authenticate
       #authenticate_or_request_with_http_basic do |name, password|
       #  name == "admin" && password == "password"
+      #end
    # end
 
     # Never trust parameters from the scary internet, only allow the white list through.

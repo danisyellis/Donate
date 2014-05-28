@@ -1,4 +1,5 @@
-<h1> Wish List</h1>
+<h1> 
+  <%= @member.handup_id %>'s Wish List</h1>
 
 <table class="items-table">
 
@@ -17,13 +18,13 @@
         <td><%= item.description %></td>
         <td><%= item.status %></td>
         <td>
-          <form action="">
-            <input type="button" value="DONATE">
-          </form>
+          <%= button_to "Donate", item_confirmation_path(item), method: :get %>
+            
+          
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 <br>
-<%= link_to 'New Item', new_item_path %>
+

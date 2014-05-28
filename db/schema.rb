@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503233223) do
+ActiveRecord::Schema.define(version: 20140504232110) do
 
   create_table "items", force: true do |t|
     t.integer  "member_id"
     t.string   "item_name"
     t.text     "description"
-    t.text     "status"
+    t.string   "status",                  default: "Needed"
     t.date     "date_donation_agreement"
     t.date     "date_donate_by"
     t.datetime "created_at"

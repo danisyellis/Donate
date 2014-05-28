@@ -5,5 +5,11 @@
 <h2> Please drop off your donation in the next 7 days </h2> 
 
 <p> If you've changed your mind, and can't donate the item after all, please let us know.
-	<button type="button" onclick="alert('Hello world!')">I can't donate this item</button>
+	<%= button_to "I can't donate this item", item_cannot_path, method: :get %>
 </p>
+
+<%= link_to 'Back', member_wishlist_path(@item.member_id)%>
+
+
+
+								
