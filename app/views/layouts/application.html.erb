@@ -9,13 +9,13 @@
 <body>
 <nav> 
 			<!--by convention, these should be ul items. See codecademy and/or Creative live notes, etc.
-			Ramon recommends the nav tag and then <a>s for each -->
+			Use the nav tag and then <a>s for each -->
 				
 			<ul>
 				<li id = "nav_left">Home </li>
 				<li id = "nav_left">List of Recipients</li>
-				<li id = "nav_left">List of Items Requested</li>
-				<li> I work at Project Homeless Connect</br> Take me to the Admin panel</li>
+				<li id = "nav_left"><%= link_to 'List of Items Requested', items_path %></li>
+				<li> I work at Project Homeless Connect</br> <%= link_to 'Take me to the Admin panel', members_path %></li>
 				<li> Wow, this site is wonderful. I want to </br> <a href="http://daniellegellis.com">see more of Dani's work</a> </div>
 				
 			</ul>
@@ -24,9 +24,3 @@
 
 </body>
 </html>
-
-
-on the home page, I want:
-user: go home, 
-admin: admin site
-portfolio looker: link to 
