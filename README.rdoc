@@ -1,27 +1,21 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Donate It! is an idea built from the Hackbright for Good Hackathon.
 
-* Ruby version
+We noticed that HandUp.us is a great site that gets donations of money to people in need.
+But we also realized that many people in the Bay Area have extra items they don't use, that they'd be happy to donate if a specific person wanted it. That old computer someone doesn't use anymore, for example, could allow a low-income person to search for a new job.
 
-* System dependencies
+This app was built as a corollary to the HandUp site (one of the executives for HandUp was a judge for the hackathon, so we hoped he'd like the idea and run with it).
 
-* Configuration
+The idea came from my partner at the hackathon, and we worked on the app architecture together, but all of the code is mine. I've been slowly refining it since the day I made it and it's still a work in progress.
 
-* Database creation
 
-* Database initialization
+Donate It! was built on Ruby 2.1.0 and Rails 4.0.2
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
