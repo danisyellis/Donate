@@ -13,10 +13,4 @@ The idea came from my partner at the hackathon, and we worked on the app archite
 
 Donate It! was built on Ruby 2.1.0 and Rails 4.0.2
 
-
-
-
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I haven't yet hooked up a home page, so for now you'll want to go to the urls /members  and /items to use the app if you run it on localhost.
