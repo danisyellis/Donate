@@ -11,9 +11,33 @@
  *= require_self
  *= require_tree .
  */
+html {
+    background: slategray;
+}
+
+nav {
+    background-color: limegreen;
+    color: white;
+    height: 75px;
+    clear: both;
+}
+
+li {
+    display:inline-block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    float: right;
+    margin-right: 17px;
+    
+}
+#nav_left {
+    display:inline-block;
+    float: left;
+}
+
 h1
 {
-    color:blue;
+    color: red;
     text-align:left;
     font-size:20pt;
 }
@@ -21,20 +45,27 @@ h1
 table 
 {
     width:100%;
-    border:1px solid green;
+    border:1px solid red;
+    background-color: gainsboro;
     
 }
  
 th
 {
     height:100px;
-    border:1px solid green;
-    color:white;
+    border:1px solid red;
+    color: #5E412F;
 }
  
 td
 {
-    background-color: rgb(192,192,192);
-    foreground-color: rgb(0,0,0);
-    border:1px solid green;
+    border:1px solid red;
 }
+
+colors of background?
+#b0e0dF
+#b0e0fF
+#BDEEFF
+#7ab7FF
+
+cream color of table? #FCEBB6;

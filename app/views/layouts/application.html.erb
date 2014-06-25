@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Donate</title>
+  <title>Donate It!</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav> 
+			<!--by convention, these should be ul items. See codecademy and/or Creative live notes, etc.
+			Ramon recommends the nav tag and then <a>s for each -->
+				
+			<ul>
+				<li id = "nav_left">Home </li>
+				<li id = "nav_left">List of Recipients</li>
+				<li id = "nav_left">List of Items Requested</li>
+				<li> I work at Project Homeless Connect</br> Take me to the Admin panel</li>
+				<li> Wow, this site is wonderful. I want to </br> <a href="http://daniellegellis.com">see more of Dani's work</a> </div>
+				
+			</ul>
+		</nav>
 <%= yield %>
 
 </body>
 </html>
+
+
+on the home page, I want:
+user: go home, 
+admin: admin site
+portfolio looker: link to 
